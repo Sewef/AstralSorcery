@@ -322,4 +322,9 @@ public class TileWell extends TileReceiverBaseInventory {
 
     }
 
+	@Override
+	public int getComparatorLevel() {
+		return (int)Math.Ceil(getPercFilled()*15/100);
+	}
+    
 }
