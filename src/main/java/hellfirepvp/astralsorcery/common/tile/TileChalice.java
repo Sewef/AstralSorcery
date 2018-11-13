@@ -373,4 +373,8 @@ public class TileChalice extends TileEntityTick implements ILiquidStarlightPower
 
     }
 
+	@Override
+	public int getComparatorLevel() {
+		return (int)Math.Ceil(getPercFilled()*15/100);
+	}
 }
